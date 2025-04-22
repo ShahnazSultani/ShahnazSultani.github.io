@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #000;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+  }
+  
+  .container {
+    padding: 40px;
+  }
+  
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .intro-text {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .intro-text h2 {
+    margin-bottom: 0;
+  }
+  
+  .intro-text h1 {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+  
+  .intro-text .email {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .intro-img img {
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .about, .highlights {
+    margin-top: 50px;
+  }
+  
+  .about h2, .highlights h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .highlights ul {
+    padding-left: 20px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+  }
+  
+  .page-title {
+    text-align: center;
+    padding: 30px;
+    font-size: 28px;
+    text-transform: lowercase;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 40px;
+    gap: 40px;
+  }
+  
+  .project-card {
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .project-title {
+    color: #3f51b5;
+    font-weight: normal;
+  }
+  
+  .project-card h3 {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .photo-placeholder {
+    background-color: #93b3c9;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  

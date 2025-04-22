@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects - Shahnaz Sultani</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+
+    .project {
+      border-radius: 10px;
+    }
+
+    .project a {
+      font-size: 18px;
+      color: blue;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .project h3 {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .photo-placeholder {
+      background-color: #87aabf;
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      color: white;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .project p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>projects</h1>
+
+  <div class="projects-grid">
+    <div class="project">
+      <a href="https://github.com/ShahnazSultani/pacman-game" target="_blank">project 1</a>
+      <h3>Pac-Man Game</h3>
+      <div class="photo-placeholder">photo</div>
+      <p>Developing an AI-powered Pac-Man game that uses search algorithms like DFS, BFS, and A* for autonomous navigation.</p>
+    </div>
+
+    <div class="project">
+      <a href="https://github.com/ShahnazSultani/benefitz-startup" target="_blank">project 2</a>
+      <h3>Startup Project for BenefitZ</h3>
+      <div class="photo-placeholder">photo</div>
+      <p>Creating a startup idea under the BenefitZ concept focused on innovation and service integration.</p>
+    </div>
+
+    <div class="project">
+      <a href="https://github.com/ShahnazSultani/os-project" target="_blank">project 3</a>
+      <h3>Operating System Project</h3>
+      <div class="photo-placeholder">photo</div>
+      <p>Working on an OS project involving process scheduling, system calls, and memory management simulation.</p>
+    </div>
+
+    <div class="project">
+      <a href="https://github.com/ShahnazSultani/uno-java" target="_blank">project 4</a>
+      <h3>UNO Game in Java</h3>
+      <div class="photo-placeholder">photo</div>
+      <p>Implementing a digital UNO card game in Java with rule enforcement and multiplayer logic.</p>
+    </div>
+  </div>
+
+</body>
+</html>
