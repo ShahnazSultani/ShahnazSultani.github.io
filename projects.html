@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Projects - Shahnaz Sultani</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #ffffff;
       padding: 20px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      z-index: -999;
+    }
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 1000;
     }
 
     h1 {
@@ -31,12 +51,14 @@
 
     .project a {
       font-size: 18px;
-      color: blue;
+      color: #0044cc; /* رنگ آبی با کنتراست بهتر */
       text-decoration: none;
     }
 
-    .project a:hover {
+    .project a:hover,
+    .project a:focus {
       text-decoration: underline;
+      outline: none;
     }
 
     .project h3 {
@@ -69,37 +91,48 @@
 </head>
 <body>
 
-  <h1>projects</h1>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <div class="projects-grid">
-    <div class="project">
-      <a href="https://github.com/ShahnazSultani/pacman-game" target="_blank">project 1</a>
-      <h3>Pac-Man Game</h3>
-      <div class="photo-placeholder">photo</div>
-      <p>Developing an AI-powered Pac-Man game that uses search algorithms like DFS, BFS, and A* for autonomous navigation.</p>
+  <header>
+    <!-- اگر منو یا هدر داری اینجا بذار -->
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <h1>Projects</h1>
+
+    <div class="projects-grid">
+      <div class="project">
+        <a href="https://github.com/ShahnazSultani/pacman-game" target="_blank" rel="noopener noreferrer">Project 1</a>
+        <h2>Pac-Man Game</h2>
+        <div class="photo-placeholder" aria-label="Pac-Man game screenshot placeholder" role="img">Photo</div>
+        <p>Developing an AI-powered Pac-Man game that uses search algorithms like DFS, BFS, and A* for autonomous navigation.</p>
+      </div>
+
+      <div class="project">
+        <a href="https://github.com/ShahnazSultani/benefitz-startup" target="_blank" rel="noopener noreferrer">Project 2</a>
+        <h2>Startup Project for BenefitZ</h2>
+        <div class="photo-placeholder" aria-label="BenefitZ startup project screenshot placeholder" role="img">Photo</div>
+        <p>Creating a startup idea under the BenefitZ concept focused on innovation and service integration.</p>
+      </div>
+
+      <div class="project">
+        <a href="https://github.com/ShahnazSultani/os-project" target="_blank" rel="noopener noreferrer">Project 3</a>
+        <h2>Operating System Project</h2>
+        <div class="photo-placeholder" aria-label="Operating system project screenshot placeholder" role="img">Photo</div>
+        <p>Working on an OS project involving process scheduling, system calls, and memory management simulation.</p>
+      </div>
+
+      <div class="project">
+        <a href="https://github.com/ShahnazSultani/uno-java" target="_blank" rel="noopener noreferrer">Project 4</a>
+        <h2>UNO Game in Java</h2>
+        <div class="photo-placeholder" aria-label="UNO game screenshot placeholder" role="img">Photo</div>
+        <p>Implementing a digital UNO card game in Java with rule enforcement and multiplayer logic.</p>
+      </div>
     </div>
+  </main>
 
-    <div class="project">
-      <a href="https://github.com/ShahnazSultani/benefitz-startup" target="_blank">project 2</a>
-      <h3>Startup Project for BenefitZ</h3>
-      <div class="photo-placeholder">photo</div>
-      <p>Creating a startup idea under the BenefitZ concept focused on innovation and service integration.</p>
-    </div>
-
-    <div class="project">
-      <a href="https://github.com/ShahnazSultani/os-project" target="_blank">project 3</a>
-      <h3>Operating System Project</h3>
-      <div class="photo-placeholder">photo</div>
-      <p>Working on an OS project involving process scheduling, system calls, and memory management simulation.</p>
-    </div>
-
-    <div class="project">
-      <a href="https://github.com/ShahnazSultani/uno-java" target="_blank">project 4</a>
-      <h3>UNO Game in Java</h3>
-      <div class="photo-placeholder">photo</div>
-      <p>Implementing a digital UNO card game in Java with rule enforcement and multiplayer logic.</p>
-    </div>
-  </div>
-
+  <footer>
+    <!-- اطلاعات تماس یا کپی‌رایت -->
+  </footer>
 </body>
 </html>
